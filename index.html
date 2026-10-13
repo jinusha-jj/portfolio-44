@@ -103,6 +103,16 @@ header{animation:drop .7s cubic-bezier(.2,.7,.2,1) backwards}
 @keyframes bob2{50%{transform:translateY(-6px) scale(1.2)}}
 .about .side{animation:bob 6s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.card:not(.in) .skill,.card:not(.in) .proj,.card:not(.in) .edu{opacity:1!important;transform:none!important}}
+
+/* ===== VERTICAL STACK LAYOUT ===== */
+.r1,.r2{grid-template-columns:1fr!important}
+.wrap{max-width:1200px;margin:0 auto;padding:40px 5%;gap:28px}
+.row{gap:28px}
+.card{padding:34px}
+.card h2{font-size:1.6rem}
+.about p{max-width:640px}
+.skills{grid-template-columns:repeat(6,1fr)}
+@media(max-width:1000px){.skills{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
